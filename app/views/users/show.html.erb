@@ -1,0 +1,17 @@
+<h1>Hello, <%= @user.firstname %>!</h1>
+<p> Here is your params</p>
+<%= image_tag @user.avatar.url(:medium) %><br>
+<p>Your name: <%= @user.firstname %></p>
+<p>Your lastname: <%= @user.lastname %></p>
+<p>Your e-mail: <%= @user.email %></p>
+<p>Your gender: <%= @user.gender %></p>
+<p>Your phone: <%= @user.phone %></p>
+<p>Your age: <%= @user.age %></p>
+<p>Your country: <%= @user.country %></p>
+<p>Your city: <%= @user.city %></p>
+<p>Your street: <%= @user.street %></p>
+<p>Your adress: <%= @user.adress %></p>
+<p>Your link: <%= @user.link %></p>
+
+<%= link_to "Home", root_path %>
+<%= link_to "Edit Profile", edit_user_path %>
